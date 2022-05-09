@@ -114,8 +114,9 @@ header h1 {
     width: 59%;
     margin-left: 28%;
     /* background-color: var(--bg-color); */
-    height: 100vh;
+    /* height: 100vh; */
     /* color: white; */
+    height: 875px;
     padding: 20px;
     border-left: 5px solid var(--bg-color);
     display: flex;
@@ -205,6 +206,11 @@ header h1 {
 
     .work {
         margin: 0px auto;
+        height: 1345px;
+    }
+
+    .item-small {
+        flex-basis: 100%;
     }
 }
 
