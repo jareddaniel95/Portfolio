@@ -1,7 +1,8 @@
 :root {
-    --bg-color: darkslategray;
-    --bg-gray: #ADBABD;
+    --bg-dark: darkslategray;
+    --bg-light: #ADBABD;
     --highlight-color: #91B7C7;
+    --text-color: white;
 }
 
 body {
@@ -14,14 +15,11 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     padding: 50px;
-    /* padding-bottom: 30px; */
-    background-color: var(--bg-color);
-    color: white;
+    background-color: var(--bg-dark);
+    color: var(--text-color);
 }
 
 header h1 {
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* margin-top: 0px; */
     font-size: 40px;
 }
 
@@ -32,7 +30,7 @@ header h1 {
 }
 
 .navigation {
-    background-color: var(--bg-gray);
+    background-color: var(--bg-light);
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -45,7 +43,7 @@ header h1 {
     display: block;
     font-size: 20px;
     padding: 20px;
-    color: white;
+    color: var(--text-color);
 }
 
 .navigation a:hover {
@@ -57,7 +55,6 @@ header h1 {
     flex-direction: row;
     justify-content: center;
     width: 80%;
-    /* height: 50vh; */
     margin: 0px auto;
     margin-top: 10px;
 }
@@ -67,28 +64,20 @@ header h1 {
 }
 
 .bio-about {
-    /* flex-grow: 2; */
     flex-basis: 80%;
     padding: 15px;
 }
 
 .bio-pic {
-    /* flex-grow: 1; */
     flex-basis: 20%;
-    /* background-image: url("../images/Profile_Pic.jpg"); */
-    /* transform: scaleX(-1); */
-    /* background-size: cover; */
-    /* color: white; */
     text-align: center;
     font-size: 35px;
     padding: 15px;
-    /* width: 150px; */
-    /* height: 150px; */
 }
 
 .bio-header {
-    background-color: var(--bg-color);
-    color: white;
+    background-color: var(--bg-dark);
+    color: var(--text-color);
     font-weight: bold;
     text-align: center;
     opacity: 60%;
@@ -107,12 +96,9 @@ header h1 {
 .work {
     width: 59%;
     margin-left: 28%;
-    /* background-color: var(--bg-color); */
-    /* height: 100vh; */
-    /* color: white; */
     height: 875px;
     padding: 20px;
-    border-left: 5px solid var(--bg-color);
+    border-left: 5px solid var(--bg-dark);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -128,9 +114,7 @@ header h1 {
 
 .item-large {
     border: 3px solid var(--highlight-color);
-    /* width: 100%; */
     flex-basis: 100%;
-    /* align-self: center; */
     height: 400px;
     margin: 15px auto;
     background-size: cover;
@@ -138,7 +122,6 @@ header h1 {
 
 .item-small {
     border: 3px solid var(--highlight-color);
-    /* width: 100%; */
     flex-basis: 47%;
     height: 200px;
     margin: 15px auto;
@@ -201,7 +184,6 @@ header h1 {
 @media screen and (max-width: 920px) {
     .navigation {
         justify-content: space-around;
-        color: hotpink;
     }
     .bio-header {
         flex-direction: column;
