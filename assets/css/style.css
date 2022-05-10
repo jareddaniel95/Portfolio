@@ -11,25 +11,19 @@ body {
 }
 
 header {
-    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 50px;
+    /* padding-bottom: 30px; */
     background-color: var(--bg-color);
     color: white;
 }
 
 header h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* margin-top: 0px; */
+    font-size: 40px;
 }
-
-/* nav {
-    background: var(--bg-gray);
-} */
-
-/* main {
-    margin: 0px auto;
-    width: 80%;
-    border-left: 6px solid var(--bg-gray);
-} */
 
 .bio-content h1 {
     font-family: 'Quicksand', sans-serif;
@@ -127,6 +121,11 @@ header h1 {
     align-content: flex-start;
 }
 
+.work a{
+    text-decoration: none;
+    color: black;
+}
+
 .item-large {
     border: 3px solid var(--highlight-color);
     /* width: 100%; */
@@ -144,25 +143,51 @@ header h1 {
     height: 200px;
     margin: 15px auto;
     background-size: cover;
+    
 }
 
 #item1 {
+    background-image: linear-gradient(var(--highlight-color), var(--highlight-color)), url("../images/tech_1.jpg");
+    background-blend-mode: color;
+}
+
+#item1:hover {
     background-image: url("../images/tech_1.jpg");
 }
 
 #item2 {
+    background-image: linear-gradient(var(--highlight-color), var(--highlight-color)), url("../images/tech_2.jpg");
+    background-blend-mode: color;
+}
+
+#item2:hover {
     background-image: url("../images/tech_2.jpg");
 }
 
 #item3 {
+    background-image: linear-gradient(var(--highlight-color), var(--highlight-color)), url("../images/tech_3.jpg");
+    background-blend-mode: color;
+}
+
+#item3:hover {
     background-image: url("../images/tech_3.jpg");
 }
 
 #item4 {
+    background-image: linear-gradient(var(--highlight-color), var(--highlight-color)), url("../images/tech_4.jpg");
+    background-blend-mode: color;
+}
+
+#item4:hover {
     background-image: url("../images/tech_4.jpg");
 }
 
 #item5 {
+    background-image: linear-gradient(var(--highlight-color), var(--highlight-color)), url("../images/tech_5.jpg");
+    background-blend-mode: color;
+}
+
+#item5:hover {
     background-image: url("../images/tech_5.jpg");
 }
 
